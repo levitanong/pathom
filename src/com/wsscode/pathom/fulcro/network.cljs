@@ -281,5 +281,5 @@
   [{:keys [ast] :as env}]
   (let [component (:component ast)
         props     (p/entity env)
-        [type _]  (prim/get-ident component props)]
+        [type _]  (fp/get-ident component props)]
     type))
